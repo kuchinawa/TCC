@@ -1,54 +1,50 @@
-import re
 import json
-import sys
 from pathlib import Path
+from collections import defaultdict
 
-def parse_log(path_txt: str) -> dict:
-    path = Path(path_txt)
-    dados = {}
+def media_execucoes(prefixo: str, pasta="dados/logs/json", inicio=1, fim=5):
+    pasta_logs = Path(pasta)
 
-    with path.open("r", encoding="utf-8") as f:
-        for linha in f:
-            linha = linha.strip()
-            # ignora linhas vazias ou sem "=>"
-            if "=>" not in linha:
-                continue
+    soma = defaultdict(float)
+    cont = 0
 
-            chave, valor_bruto = linha.split("=>", 1)
-            chave = chave.strip()
-            valor_bruto = valor_bruto.strip()
+    for i in range(inicio, fim + 1):
+        nome = f"{prefixo}_exec{i:03d}.json"
+        path = pasta_logs / nome
+        if not path.exists():
+            continue
 
-            # tira a parte entre parênteses, se existir
-            # ex: "34311 (34 s)" -> "34311"
-            valor_sem_par = re.split(r"\s*\(", valor_bruto, maxsplit=1)[0].strip()
+        with path.open("r", encoding="utf-8") as f:
+            dados = json.load(f)
 
-            # tenta converter para int, senão mantém como string
-            try:
-                valor = int(valor_sem_par)
-            except ValueError:
-                try:
-                    valor = float(valor_sem_par.replace(",", "."))
-                except ValueError:
-                    valor = valor_bruto  # fica texto original
+        for k, v in dados.items():
+            if isinstance(v, (int, float)):
+                soma[k] += v
+        cont += 1
 
-            dados[chave] = valor
+    if cont == 0:
+        return {}
 
-    return dados
+    medias = {k: v / cont for k, v in soma.items()}
+    return medias
 
 def main():
-    if len(sys.argv) < 3:
-        print("Uso: python log_to_json.py entrada.txt saida.json")
-        sys.exit(1)
+    prefixo = "task_metrics2021-2022-2023-2024-2025-16-4"
+    pasta = "dados/logs/json"
 
-    entrada = sys.argv[1]
-    saida = sys.argv[2]
+    medias = media_execucoes(prefixo, pasta=pasta, inicio=1, fim=5)
 
-    dados = parse_log(entrada)
+    if not medias:
+        print("Nenhum arquivo encontrado.")
+        return
 
-    with open(saida, "w", encoding="utf-8") as f_out:
-        json.dump(dados, f_out, ensure_ascii=False, indent=2)
+    # nome do arquivo de saída, por exemplo: stage_metrics2021-1-4_media.json
+    caminho_saida = Path(pasta) / f"{prefixo}_media.json"
 
-    print(f"JSON salvo em: {saida}")
+    with caminho_saida.open("w", encoding="utf-8") as f_out:
+        json.dump(medias, f_out, ensure_ascii=False, indent=2)
+
+    print(f"Médias salvas em: {caminho_saida}")
 
 if __name__ == "__main__":
     main()

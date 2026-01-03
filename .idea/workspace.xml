@@ -4,29 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86a65ea1-7746-4c75-b86b-3daef5a3f927" name="Changes" comment="codicuzinho">
+    <list default="true" id="86a65ea1-7746-4c75-b86b-3daef5a3f927" name="Changes" comment="tudo lixo">
       <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/bronze_prata.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/cru_bronze.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/load.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/performance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipiline/prata_ouro.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teste3/1main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/analise.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/TCC.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TCC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/log_to_json.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/bronzeToPrata.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/cruToBronze.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/data1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/data2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/data3.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/data4.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipilenes/prataToOuro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipiline/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipiline/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipiline/prata_ouro.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipiline/prata_ouro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste3/1main.py" beforeDir="false" afterPath="$PROJECT_DIR$/teste3/1main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/analise.py" beforeDir="false" afterPath="$PROJECT_DIR$/util/analise.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +59,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.1main.executor&quot;: &quot;Run&quot;,
     &quot;Python.Juntar.executor&quot;: &quot;Run&quot;,
     &quot;Python.Trabalho.executor&quot;: &quot;Run&quot;,
     &quot;Python.a.executor&quot;: &quot;Run&quot;,
@@ -82,6 +71,7 @@
     &quot;Python.doDici.executor&quot;: &quot;Run&quot;,
     &quot;Python.etl.executor&quot;: &quot;Run&quot;,
     &quot;Python.etl_srag.executor&quot;: &quot;Run&quot;,
+    &quot;Python.log_to_json.executor&quot;: &quot;Run&quot;,
     &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
     &quot;Python.prataToOuro.executor&quot;: &quot;Run&quot;,
@@ -90,7 +80,9 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
     &quot;database.data.extractors.current.export.id&quot;: &quot;Markdown-Groovy.md.groovy&quot;,
     &quot;database.data.extractors.current.id&quot;: &quot;JSON-Groovy.json.groovy&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -122,14 +114,38 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dados/logs/json" />
       <recent name="$PROJECT_DIR$/dados/bronze" />
       <recent name="$PROJECT_DIR$/teste3" />
       <recent name="$PROJECT_DIR$/pipilenes" />
       <recent name="$PROJECT_DIR$/dados/cru" />
-      <recent name="$PROJECT_DIR$/dados" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analise">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="1main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TCC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/teste3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste3/1main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="analise" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TCC" />
       <option name="ENV_FILES" value="" />
@@ -144,7 +160,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/analise.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="log_to_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TCC" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/util/log_to_json.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,6 +210,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pipiline/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -180,16 +222,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analise" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.1main" />
+        <item itemvalue="Python.analise" />
+        <item itemvalue="Python.log_to_json" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28238.29" />
-        <option value="bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
       </set>
     </attachedChunks>
   </component>
@@ -228,7 +272,21 @@
       <workItem from="1764610846504" duration="4798000" />
       <workItem from="1764639719233" duration="1959000" />
       <workItem from="1764676216178" duration="7851000" />
-      <workItem from="1764691834202" duration="4792000" />
+      <workItem from="1764691834202" duration="10928000" />
+      <workItem from="1764778137589" duration="6120000" />
+      <workItem from="1765290111404" duration="463000" />
+      <workItem from="1765300663166" duration="1347000" />
+      <workItem from="1765386670909" duration="3566000" />
+      <workItem from="1765392006622" duration="543000" />
+      <workItem from="1765477793306" duration="5996000" />
+      <workItem from="1765801768942" duration="1982000" />
+      <workItem from="1765826414537" duration="6686000" />
+      <workItem from="1765865637032" duration="7367000" />
+      <workItem from="1765904485302" duration="1231000" />
+      <workItem from="1766367756609" duration="192000" />
+      <workItem from="1766368452374" duration="1838000" />
+      <workItem from="1766390113303" duration="4162000" />
+      <workItem from="1766397458991" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="codicuzinho">
       <option name="closed" value="true" />
@@ -238,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1754243652288</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="tudo lixo">
+      <option name="closed" value="true" />
+      <created>1764697237951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1764697237951</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,24 +323,26 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="codicuzinho" />
-    <option name="LAST_COMMIT_MESSAGE" value="codicuzinho" />
+    <MESSAGE value="tudo lixo" />
+    <option name="LAST_COMMIT_MESSAGE" value="tudo lixo" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TCC$bronzeToPrata.coverage" NAME="bronzeToPrata Coverage Results" MODIFIED="1754319853973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
-    <SUITE FILE_PATH="coverage/TCC$Trabalho.coverage" NAME="Trabalho Coverage Results" MODIFIED="1753835319448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TCC$arquivo.coverage" NAME="cruToBronze Coverage Results" MODIFIED="1754295925071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TCC$etl.coverage" NAME="etl Coverage Results" MODIFIED="1753882703541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$doDici.coverage" NAME="doDici Coverage Results" MODIFIED="1754064241888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/TCC$prataToOuro.coverage" NAME="prataToOuro Coverage Results" MODIFIED="1754313378106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
-    <SUITE FILE_PATH="coverage/TCC$analise.coverage" NAME="analise Coverage Results" MODIFIED="1764693942701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
+    <SUITE FILE_PATH="coverage/TCC$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1764010610181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipiline" />
+    <SUITE FILE_PATH="coverage/TCC$1main.coverage" NAME="1main Coverage Results" MODIFIED="1765878454947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/teste3" />
+    <SUITE FILE_PATH="coverage/TCC$Juntar.coverage" NAME="Juntar Coverage Results" MODIFIED="1753812100902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$sequencial.coverage" NAME="sequencial Coverage Results" MODIFIED="1753933443569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$analise.coverage" NAME="analise Coverage Results" MODIFIED="1764699765188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/util" />
     <SUITE FILE_PATH="coverage/TCC$baixarDados.coverage" NAME="baixarDados Coverage Results" MODIFIED="1753734718412" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/baixarDados" />
+    <SUITE FILE_PATH="coverage/TCC$etl.coverage" NAME="etl Coverage Results" MODIFIED="1753882703541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$cruToBronze.coverage" NAME="cruToBronze Coverage Results" MODIFIED="1763153779640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
+    <SUITE FILE_PATH="coverage/TCC$main.coverage" NAME="main Coverage Results" MODIFIED="1766397468191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipiline" />
+    <SUITE FILE_PATH="coverage/TCC$arquivo.coverage" NAME="cruToBronze Coverage Results" MODIFIED="1754295925071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$bronzeToPrata.coverage" NAME="bronzeToPrata Coverage Results" MODIFIED="1754319853973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
     <SUITE FILE_PATH="coverage/TCC$etl_srag.coverage" NAME="etl_srag Coverage Results" MODIFIED="1754288791385" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
     <SUITE FILE_PATH="coverage/TCC$a.coverage" NAME="a Coverage Results" MODIFIED="1763985783012" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TCC$sequencial.coverage" NAME="sequencial Coverage Results" MODIFIED="1753933443569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TCC$doDici.coverage" NAME="doDici Coverage Results" MODIFIED="1754064241888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TCC$cruToBronze.coverage" NAME="cruToBronze Coverage Results" MODIFIED="1763153779640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipilenes" />
-    <SUITE FILE_PATH="coverage/TCC$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1764010610181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipiline" />
-    <SUITE FILE_PATH="coverage/TCC$main.coverage" NAME="main Coverage Results" MODIFIED="1764640564858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/pipiline" />
-    <SUITE FILE_PATH="coverage/TCC$Juntar.coverage" NAME="Juntar Coverage Results" MODIFIED="1753812100902" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TCC$Trabalho.coverage" NAME="Trabalho Coverage Results" MODIFIED="1753835319448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

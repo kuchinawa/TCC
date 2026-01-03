@@ -16,7 +16,7 @@ def salvar_ouro(df_ouro, nome_base):
 def main():
     spark = SparkSession.builder \
         .appName("ETL_TCC") \
-        .master("local[*]") \
+        .master("local[16]") \
         .config("spark.driver.memory", "4g") \
         .config("spark.executor.memory", "4g") \
         .getOrCreate()
@@ -52,13 +52,13 @@ def main():
     salvar_ouro(df_gold_testes, "ouro_testes")
 
 
-    df_gold_vac = prata_ouro.ouro_vacinacao_gravidade(df_silver)
-    salvar_ouro(df_gold_vac, "ouro_vacinacao")
+ #   df_gold_vac = prata_ouro.ouro_vacinacao_gravidade(df_silver)
+ #   salvar_ouro(df_gold_vac, "ouro_vacinacao")
 
     stage_metrics.end()
     task_metrics.end()
 
-    arquivo = "2021-2022-2023-2024-2025-"
+    arquivo = "2021-2022-2023-2024-2025-TESTE"
     nucleos = "1-"
     driverexecutores = "4"
     exec_num = 5
@@ -70,6 +70,7 @@ def main():
     stage_metrics.print_report()
     task_metrics.print_report()
 
+    input("Pressione Enter para encerrar o Spark...")
     spark.stop()
 
 if __name__ == "__main__":

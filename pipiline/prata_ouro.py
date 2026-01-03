@@ -39,9 +39,6 @@ def ouro_testes_classificacao(df):
     return df.groupBy("SEM_NOT", "SG_UF_NOT").agg(
         sum(when(col("PCR_SARS2") == 1, 1).otherwise(0)).alias("confirmados_pcr"),
         sum(when(col("AN_SARS2") == 1, 1).otherwise(0)).alias("confirmados_antigeno"),
-        sum(when(col("CLASSI_FIN") == 5, 1).otherwise(0)).alias("descartados"),
-        sum(when(col("CLASSI_FIN").isin(2, 3), 1).otherwise(0)).alias("confirmados_srag_viral"),
-        sum(when(col("EVOLUCAO").isin(2, 3), 1).otherwise(0)).alias("obitos")
     )
 
 def ouro_vacinacao_gravidade(df):
